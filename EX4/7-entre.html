@@ -1,0 +1,28 @@
+//Ler 10 valores e escrever quantos desses valores lidos estão no intervalo [10,20] (incluindo os valores 10 e 20) e quantos deles estão fora deste intervalo.
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language= javascript pt-br>
+        i=1;
+        c=0;
+        f=0;
+
+        while (i<=10)
+        {
+            numero=parseInt(prompt( "Insire o valor"));
+            if (numero>=10 && numero<=20)
+            {
+                c=c+1;
+            }
+            else
+            {
+                f=f+1;
+            }
+            i=i+1;
+        }
+        document.writeln("Valores entre 10 e 20 "+ "="+ c +"</br>" + "Valores fora " +"=" +f);
+       </script>
+    <body></body>
+    </head>
+
+    </html>
