@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language=javascript>
+                    
+        inf= parseInt(prompt("Informe um valor"));
+        cal= 1;
+        div= 0;
+
+        while (cal<=inf)
+        {
+            resto= inf%cal;
+                if (resto==0)
+                    {
+                        div= div+1;
+                    
+        if (div==2)
+        {
+            document.write(cal + " é primo");
+            cal= cal+1;
+        }
+
+        else
+        {
+            document.write(cal + " não é primo");
+            cal= cal+1;
+        }
+        }
+        }
+        </script>
+    </head>
+    <body></body>
+</html>

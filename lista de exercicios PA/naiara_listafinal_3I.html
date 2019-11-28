@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language=javascript>
+            par=0
+            impar=0
+            numb= 1;
+
+            while(numb<=10)
+            {
+                num= parseInt(prompt("Informe um valor"));
+
+                resto= (num%2);
+                
+                if (resto==0)
+                {
+                    par= par+1;
+                    numb= numb+1;
+                }
+                
+                else
+                {
+                    impar= impar+1;
+                    numb= numb+1
+                }
+            }
+
+            document.write("A quantidade de números pares é: " + par );
+            document.write("A quantidade de números impares é: " + impar);
+        </script>
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language=javascript>
+        
+        inf= parseInt(prompt("Informe um valor inteiro"));
+        cal= 1;
+        div= 0;
+
+        while (cal<=inf)
+        {
+            resto= inf%cal;
+                if (resto==0)
+                    {
+                        div= div+1;
+                    }
+            cal= cal+1;
+            document.write(" ele é divisisível por " + cal);
+        }
+        if (div==2)
+        {
+            document.write(inf + " é primo");
+        }
+
+        else
+        {
+            document.write(inf + " não é primo </br>");
+        }
+
+        </script>
+    </head>
+    <body></body>
+</html>

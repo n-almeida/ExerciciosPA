@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+        salario = parseFloat(prompt("Quanto voce ganha por horas trabalhadas?"));
+        horas = parseFloat(prompt("Quantas horas você trabalhou nesse mês?"));
+        sb = salario*horas*30;
+
+        ir = sb * (11/100);
+        inss = sb * (8/100);
+        sindicato = sb * (5/100);
+        descontos = ir + inss + sindicato;
+        sl = sb - descontos;
+
+        document.write("Seu sálario sem descontos é de " + sb.toFixed(2) + " reais </br>");
+        document.write("O valor descontado do imposto de renda é de " + ir.toFixed(2) + " reais </br>");
+        document.write("O valor descontado do INSS é de " + inss.toFixed(2) + " reais  </br>");
+        document.write("O valor descontado do sindicato é de " + sindicato.toFixed(2) + " reais </br>");
+        document.write("Seu sálario sendo retirado todos os descontos é de " + sl.toFixed(2) + " reais </br>");
+        
+        </script>
+    </body>
+</html>

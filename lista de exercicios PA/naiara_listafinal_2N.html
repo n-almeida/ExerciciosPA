@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language=javascript>
+            res= 0
+
+            inf1= prompt("Telefonou para a vítima? (1 para 'sim' e 2 para 'não')");
+            if (inf1 == 1)
+            {
+            res= res+1;
+            }
+
+            inf2= prompt("Esteve no local do crime? (1 para 'sim' e 2 para 'não')");
+            if (inf2 == 1)
+            {
+            res= res+1;
+            }
+
+            inf3= prompt("Mora perto da vítima? (1 para 'sim' e 2 para 'não')");
+            if (inf3 == 1)
+            {
+            res= res+1;
+            }
+
+            inf4= prompt("Devia para a vítima? (1 para 'sim' e 2 para 'não')");
+            if (inf4 == 1)
+            {
+            res= res+1;
+            }
+
+            inf5= prompt("Já trabalhou com a vítima? (1 para 'sim' e 2 para 'não')");
+            if (inf5 == 1)
+            {
+            res= res+1;
+            }
+
+            //Classificação
+
+            if (res == 2)
+            {
+                document.write("Suspeito");
+            }
+
+            else if (res == 3 | res == 4)
+            {
+                document.write("Cúmplice");
+            }
+
+            else if (res == 5)
+            {
+                document.write("Assassino");
+            }
+
+            else
+            {
+                document.write("Inocente");
+            }
+        </script>
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script language = javascript>
+                
+                salario = parseFloat(prompt("Digite seu salario"))
+                
+                if(salario <= 280)
+                {
+                    porcen = 20
+                }
+
+                else if(salario <= 700 )
+                {
+                    porcen = 15
+                }
+
+                else if(salario <= 1500)
+                {
+                    porcen = 10
+                }
+
+                else 
+                {
+                    porcen = 5
+                }
+
+                document.write("seu salario é" + salario + "</br>")
+                document.write("valor do aumento" + porcen + "</br>")
+
+                porcen = porcen/100.0
+               
+                aumento = porcen * salario
+                
+                novo = salario + aumento
+
+                document.write("Novo salario" + novo + "</br>")
+                document.write("Valor da porcentagem" + aumento + "</br>")
+
+            </script>
+        </head>
+    </html>
